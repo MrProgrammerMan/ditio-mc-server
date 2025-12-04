@@ -48,6 +48,7 @@ The deployment pipeline requires the following repository secrets:
 - Credentials for rsync
 - OAuth credentials for Feide
 The pipeline generates an agenix key on the client and enxrypts all other credentials using this key.
+An activity diagram of the pipeline is available [here](./docs/diagrams/activity_diagrams/deploy.md).
 
 ## Current state of development
 See the [backlog](./docs/backlog.md).

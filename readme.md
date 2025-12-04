@@ -50,4 +50,4 @@ The deployment pipeline requires the following repository secrets:
 The pipeline generates an agenix key on the client and enxrypts all other credentials using this key.
 
 ## Current state of development
-See the [backlog](./backlog.md).
+See the [backlog](./docs/backlog.md).

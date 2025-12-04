@@ -36,12 +36,13 @@ flowchart TD
     
     P3 --> J1([Web server starts])
     P3 --> J2([Minecraft server starts])
-    J1 --> K([First user logs in to the web server])
-    K --> P4(____________________)
-    
+    J1 --> D2{Exsisting user data?}
+    D2 -- no --> K2([First user logs in to the web server])
+    D2 -- yes --> K1([Pull user data])
+    K2 --> L([User is queued for admin access])
+    L --> P4(____________________)
+    K1 --> P4
     J2 --> P4
 
-    P4 --> L([User set to admin and whitelisted])
-
-    L --> END(((END)))
+    P4 --> END(((END)))
 ```
